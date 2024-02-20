@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用者輸入介面</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <!-- 輸入工號 -->
+        <label for="工號">工號:</label>
+        <input
+          id="工號"
+          type="text"
+          name="工號"
+          minlength="4"
+          maxlength="4"
+          placeholder="請輸入您的工號"
+        />
+      </div>
+      <div>
+        <!-- 輸入密碼 -->
+        <label for="password">密碼:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="10"
+          maxlength="16"
+          placeholder="請輸入您的密碼"
+        />
+      </div>
+      <br />
+      <div>
+        <!-- 填寫年齡，可上下選擇 -->
+        <label for="年齡">年齡:</label>
+        <input
+          type="number"
+          id="年齡"
+          name="age"
+          value="18"
+          min="1"
+          max="125"
+          step="0.1"
+        />
+      </div>
+      <div>
+        <!-- 年齡拉條 -->
+        <label for="">年齡:</label>
+        1<input type="range" value="18" />125
+      </div>
+      <div>
+        <!-- 填寫性別 -->
+        <label for="gender">性別:</label>
+        <select name="gender" id="gender">
+          <option></option>
+          <option value="male">男性</option>
+          <option value="female">女性</option>
+          <option value="other">其他</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <!-- 填寫居住地 -->
+        <label for="area">地區:</label>
+        <input list="area-list" type="text" name="area" id="area" />
+        <datalist id="area-list">
+          <option value="台北市">台北市</option>
+          <option value="台中市">台中市</option>
+          <option value="高雄市">高雄市</option>
+        </datalist>
+      </div>
+      <div>
+        <!-- 輸入信箱 -->
+        <label for="信箱">信箱:</label>
+        <input type="email" id="信箱" placeholder="請輸入您的信箱" />
+        <input type="checkbox" id="電子報" checked value="訂閱" />
+        <label for="電子報">訂閱電子報</label>
+      </div>
+      <br />
+      <div>
+        <!-- 填寫建議 -->
+        <textarea
+          name="suggestion"
+          id="suggestion"
+          cols="41"
+          rows="10"
+          placeholder="建議"
+        >
+        </textarea>
+      </div>
+      <div>
+        <!-- 提交表單按鈕 -->
+        <button type="submit">提交表單</button>
+      </div>
+      <div>
+        <p>Vincent Chu 2024.01.31 &#169;</p>
+      </div>
+    </form>
+  </body>
+</html>
